@@ -5,6 +5,8 @@ Pipelines
 Overview
 ========
 
+
+
 Pipelines are the central concept tying together the processing steps applied to your messages.
 
 Pipelines contain rules and can be connected to one or more streams, enabling fine-grained control over which processing steps are performed on a given type of message.
