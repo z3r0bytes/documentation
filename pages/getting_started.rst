@@ -10,7 +10,7 @@ Graylog is a very flexible solution. It can be deployed in many different ways. 
 
 Virtual Appliances are the fastest way to get started. However, since the Virtual Appliances are generally not suitable for use in production, **they should be used strictly for proof of concept, evaluations or lab environments**. Users should plan to pick one of the other, more flexible installation methods for a production deployment.
 
-If you need assistance planning and building your logging environment `we offer professional support <https://www.graylog.org/professional-support>`__ that can work with you.
+If you need assistance planning and building your logging environment `we offer professional support <https://www.graylog.org/pricing>`__ that can work with you.
 
 
 .. toctree::
@@ -20,5 +20,6 @@ If you need assistance planning and building your logging environment `we offer 
    getting_started/download_install.rst
    getting_started/configure.rst
    getting_started/web_console.rst
+   getting_started/collect.rst 
    getting_started/explore.rst
-   getting_started/collect.rst   
+  

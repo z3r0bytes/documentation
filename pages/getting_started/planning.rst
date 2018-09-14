@@ -103,7 +103,7 @@ Users
 
 The most important user-related factor to consider is the number of users. If the number is large, or if many users will be querying the data simultaneously, you may want to take that into consideration when designing an architecture. 
 
-The users' level of skill should be considered. Less technical users may require more pre-built content, such as dashboards. They may also require more training.
+The users' level of skill should be considered. Less technical users may require more pre-built content, such as dashboards. 
 
 Consideration should also be paid as to what event sources each user group should have access. As in all questions of access control, the principle of least privilege should apply.
 
@@ -133,6 +133,6 @@ Many variables affect storage requirements, such as how much of each message is 
 
 A simple rule of thumb for planning storage is to take your average daily ingestion rate, multiply it by the number of days you need to retain the data online, and then multiply that number by 1.3 to account for metadata overhead. (GB/day x Ret. Days x 1.3 = storage req.). 
 
-Elasticsearch makes extensive use of slack storage space in the course of it's operations. Users are strongly encouraged to exceed the minimum storage required for their calculated ingestion rate. When at maximum retention, Elasticsearch storage should not exceed 75% of total space.
+Elasticsearch makes extensive use of slack storage space in the course of its operations. Users are strongly encouraged to exceed the minimum storage required for their calculated ingestion rate. When at maximum retention, Elasticsearch storage should not exceed 75% of total space.
 
 
