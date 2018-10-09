@@ -1,39 +1,8 @@
 *********
-Pipelines
+Stages
 *********
 
-Overview
-========
 
-
-
-Pipelines are the central concept tying together the processing steps applied to your messages.
-
-Pipelines contain rules and can be connected to one or more streams, enabling fine-grained control over which processing steps are performed on a given type of message.
-
-Processing rules are simply conditions followed by a list of actions, and do not have control flow by themselves.  To control the order in which processing rules are applied, pipelines utilize stages.
-
-Stages are groups of conditions and actions which need to run in order. This is done by assigning a priority value. All stages with the same priority run at the same time across all connected pipelines. Stages provide the necessary control flow to decide whether or not to run the remaining stages in a pipeline.
-
-Pipeline structure
-==================
-
-Internally pipelines are represented as code. Let's have a look at a simple example and understand what each part does::
-
-    pipeline "My new pipeline"
-    stage 1 match all
-      rule "has firewall fields";
-      rule "from firewall subnet";
-    stage 2 match either
-      rule "geocode IPs";
-      rule "anonymize source IPs";
-    end
-
-This code snippet declares a new pipeline named ``My new pipeline``, which has two stages.
-
-
-Stages 
-======
 
 Stages are run in the order of their given *priority*, and aren't otherwise named. Stage priorities can be any integer you prefer, positive or negative.
 
