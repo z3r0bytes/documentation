@@ -23,7 +23,7 @@ The official MongoDB repository provides the most up-to-date version and is the 
 
   $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
   $ echo "deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
-  $ sudo apt-get update 
+  $ sudo apt-get update
   $ sudo apt-get install -y mongodb-org
 
 .. [#] For e.g. corporate proxies and other non-free environments you can use a keyserver approach via wget.
@@ -34,7 +34,7 @@ The last step is to enable MongoDB during the operating system's startup::
     $ sudo systemctl daemon-reload
     $ sudo systemctl enable mongod.service
     $ sudo systemctl restart mongod.service
-  
+
 
 Elasticsearch
 -------------
@@ -64,8 +64,8 @@ Graylog
 
 Now install the Graylog repository configuration and Graylog itself with the following commands::
 
-  $ wget https://packages.graylog2.org/repo/packages/graylog-3.0-repository_latest.deb
-  $ sudo dpkg -i graylog-3.0-repository_latest.deb
+  $ wget https://packages.graylog2.org/repo/packages/graylog-3.1-repository_latest.deb
+  $ sudo dpkg -i graylog-3.1-repository_latest.deb
   $ sudo apt update && sudo apt install graylog-server
 
 Follow the instructions in your ``/etc/graylog/server/server.conf`` and add ``password_secret`` and ``root_password_sha2``. These settings are mandatory and without them, Graylog will not start!
